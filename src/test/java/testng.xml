@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" parallel="tests" thread-count="1">
+
+    <test name="Screenshot test">
+        <classes>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="connectionTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!--<test name="Tests On Firefox">-->
+        <!--<parameter name="browser" value="firefox"/>-->
+        <!--<classes>-->
+            <!--<class name="tests.MainPageTest"/>-->
+            <!--<class name="tests.SearchPageTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+
+</suite>
